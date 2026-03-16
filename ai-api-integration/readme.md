@@ -168,20 +168,26 @@ All working outputs are saved in the `screenshots/` folder:
 
 Here are all my working programs:
 
+## 📸 Screenshots
+
+<div align="center">
+
 ### Groq
-![Groq](screenshots/groq.png)
+<img src="screenshots/groq.png" width="500">
 
 ### Ollama
-![Ollama](screenshots/ollama.png)
+<img src="screenshots/ollama.png" width="500">
 
 ### Hugging Face
-![Hugging Face](screenshots/huggingface.png)
+<img src="screenshots/huggingface.png" width="500">
 
 ### Google Gemini
-![Gemini](screenshots/gemini.png)
+<img src="screenshots/gemini.png" width="500">
 
 ### Cohere
-![Cohere](screenshots/cohere.png)
+<img src="screenshots/cohere.png" width="500">
+
+</div>
 
 
 | API | Screenshot File | Status |
