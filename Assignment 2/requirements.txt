@@ -1,0 +1,8 @@
+openai
+groq
+transformers
+torch
+google-genai
+cohere
+python-dotenv
+requests
