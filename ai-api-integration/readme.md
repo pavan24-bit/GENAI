@@ -162,30 +162,28 @@ python cohere_example.py
 **Sample Input:** `Name one planet`
 **Expected Output:** `Jupiter`
 
-## 📸 Screenshots
+## 📸 Output Screenshots
 
 All working outputs are saved in the `screenshots/` folder:
 
 Here are all my working programs:
 
-## 📸 Screenshots
-
 <div align="center">
 
 ### Groq
-<img src="screenshots/groq.png" width="500">
+<img src="screenshots/groq.png" width="600">
 
 ### Ollama
-<img src="screenshots/ollama.png" width="500">
+<img src="screenshots/ollama.png" width="600">
 
 ### Hugging Face
-<img src="screenshots/huggingface.png" width="500">
+<img src="screenshots/huggingface.png" width="600">
 
 ### Google Gemini
-<img src="screenshots/gemini.png" width="500">
+<img src="screenshots/gemini.png" width="600">
 
 ### Cohere
-<img src="screenshots/cohere.png" width="500">
+<img src="screenshots/cohere.png" width="600">
 
 </div>
 
