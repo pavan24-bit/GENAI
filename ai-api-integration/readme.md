@@ -3,7 +3,7 @@
 
 <div align="center">
   <h3>Six AI APIs - One Project</h3>
-  <p>OpenAI | Groq | Hugging Face | Google Gemini | Cohere</p>
+  <p>OpenAI | Groq | Ollama | Hugging Face | Google Gemini | Cohere</p>
 </div>
 
 ## 📋 Project Description
@@ -12,10 +12,10 @@ This project demonstrates how to integrate and use six different AI providers th
 ## 🚀 Quick Start Guide
 
 ### Prerequisites
--  Python 3.8 or higher installed
--  pip (Python package installer)
--  Git (for GitHub)
--  Internet connection 
+- ✅ Python 3.8 or higher installed
+- ✅ pip (Python package installer)
+- ✅ Git (for GitHub)
+- ✅ Internet connection (except for Ollama)
 
 ## 🔧 Setup Instructions
 
@@ -32,8 +32,8 @@ cd ai-api-integration
 pip install -r requirements.txt
 
 # Or install them one by one
-pip install openai
 pip install groq
+pip install ollama
 pip install transformers
 pip install torch
 pip install google-genai
@@ -42,19 +42,9 @@ pip install python-dotenv
 pip install requests
 ```
 
-## 🔑 How to Get API Keys 
+## 🔑 How to Get API Keys (With Screenshots)
 
-### 1️⃣ **OpenAI API Key**
-| Step | Instructions |
-|------|--------------|
-| 1 | Go to https://platform.openai.com |
-| 2 | Click "Sign Up" and create account |
-| 3 | Go to https://platform.openai.com/api-keys |
-| 4 | Click "Create new secret key" |
-| 5 | Copy the key (starts with `sk-`) |
-| 6 | Save it somewhere safe! |
-
-### 2️⃣ **Groq API Key**
+### 1️⃣ **Groq API Key**
 | Step | Instructions |
 |------|--------------|
 | 1 | Visit https://console.groq.com |
@@ -62,6 +52,15 @@ pip install requests
 | 3 | Go to API Keys section |
 | 4 | Click "Create API Key" |
 | 5 | Give it a name and copy the key |
+
+### 2️⃣ **Ollama (No API Key Needed!)**
+| Step | Instructions |
+|------|--------------|
+| 1 | Download from https://ollama.ai/ |
+| 2 | Install like any other program |
+| 3 | Open Terminal/CMD and type: `ollama pull llama3.2` |
+| 4 | Wait for download (about 2GB) |
+| 5 | That's it! Runs completely free on your computer |
 
 ### 3️⃣ **Hugging Face API Key**
 | Step | Instructions |
@@ -82,7 +81,7 @@ pip install requests
 | 4 | Select or create a project |
 | 5 | Copy your new API key |
 
-### 5️⃣6️ **Cohere API Key**
+### 5️⃣ **Cohere API Key**
 | Step | Instructions |
 |------|--------------|
 | 1 | Go to https://dashboard.cohere.com |
@@ -97,7 +96,6 @@ pip install requests
 
 ### For Windows Users (Command Prompt)
 ```cmd
-setx OPENAI_API_KEY "your-openai-key-here"
 setx GROQ_API_KEY "your-groq-key-here"
 setx HUGGINGFACE_API_KEY "your-huggingface-key-here"
 setx GOOGLE_API_KEY "your-gemini-key-here"
@@ -106,7 +104,6 @@ setx COHERE_API_KEY "your-cohere-key-here"
 
 ### For Mac/Linux Users
 ```bash
-export OPENAI_API_KEY="your-openai-key-here"
 export GROQ_API_KEY="your-groq-key-here"
 export HUGGINGFACE_API_KEY="your-huggingface-key-here"
 export GOOGLE_API_KEY="your-gemini-key-here"
@@ -116,7 +113,6 @@ export COHERE_API_KEY="your-cohere-key-here"
 ### Alternative: Using .env File (Easier!)
 Create a file called `.env` in your project folder:
 ```env
-OPENAI_API_KEY=sk-xxxxxxxxxxxx
 GROQ_API_KEY=gsk_xxxxxxxxxxxx
 HUGGINGFACE_API_KEY=hf_xxxxxxxxxxxx
 GOOGLE_API_KEY=AIzaxxxxxxxxxxxx
@@ -127,19 +123,23 @@ COHERE_API_KEY=xxxxxxxxxxxx
 
 ## 🎮 How to Run Each Program
 
-### ▶️ Run OpenAI Example
-```bash
-python openai_example.py
-```
-**Sample Input:** `What is the capital of France?`
-**Expected Output:** `The capital of France is Paris.`
-
 ### ▶️ Run Groq Example
 ```bash
 python groq_example.py
 ```
 **Sample Input:** `Tell me a fun fact about elephants`
 **Expected Output:** `Elephants are the only mammals that can't jump!`
+
+### ▶️ Run Ollama Example (Local)
+```bash
+# First, make sure Ollama is running
+ollama serve
+
+# In another terminal, run:
+python ollama_example.py
+```
+**Sample Input:** `What is 2+2?`
+**Expected Output:** `2+2 equals 4`
 
 ### ▶️ Run Hugging Face Example
 ```bash
@@ -166,13 +166,31 @@ python cohere_example.py
 
 All working outputs are saved in the `screenshots/` folder:
 
+Here are all my working programs:
+
+### Groq
+![Groq](screenshots/groq.png)
+
+### Ollama
+![Ollama](screenshots/ollama.png)
+
+### Hugging Face
+![Hugging Face](screenshots/huggingface.png)
+
+### Google Gemini
+![Gemini](screenshots/gemini.png)
+
+### Cohere
+![Cohere](screenshots/cohere.png)
+
+
 | API | Screenshot File | Status |
 |-----|-----------------|--------|
-| OpenAI | `screenshots/openai_output.png` | ✅ |
-| Groq | `screenshots/groq_output.png` | ✅ |
-| Hugging Face | `screenshots/huggingface_output.png` | ✅ |
-| Google Gemini | `screenshots/gemini_output.png` | ✅ |
-| Cohere | `screenshots/cohere_output.png` | ✅ |
+| Groq | `screenshots/groq.png` | ✅ |
+| Ollama | `screenshots/ollama.png` | ✅ |
+| Hugging Face | `screenshots/huggingface.png` | ✅ |
+| Google Gemini | `screenshots/gemini.png` | ✅ |
+| Cohere | `screenshots/cohere.png` | ✅ |
 
 ## 📦 Dependencies (requirements.txt)
 
@@ -193,8 +211,8 @@ requests>=2.31.0
 ```
 ai-api-integration/
 │
-├── openai_example.py          # OpenAI GPT models
 ├── groq_example.py             # Groq Llama models
+├── ollama_example.py           # Local Ollama models
 ├── huggingface_example.py      # Hugging Face models
 ├── gemini_example.py           # Google Gemini
 ├── cohere_example.py           # Cohere models
@@ -204,14 +222,12 @@ ai-api-integration/
 ├── README.md                   # This file
 │
 └── screenshots/                # Output screenshots
-    ├── openai_output.png
     ├── groq_output.png
     ├── ollama_output.png
     ├── huggingface_output.png
     ├── gemini_output.png
     └── cohere_output.png
 ```
-
 ## 🐛 Common Errors & Solutions
 
 | Error | Solution |
@@ -221,6 +237,7 @@ ai-api-integration/
 | `Rate limit exceeded` | Wait a minute and try again |
 | `Model not found` | Update model name in code |
 | `429 Insufficient quota` | Check your billing/credits |
+| `Ollama not running` | Run `ollama serve` first |
 
 ## 🎯 Sample Prompts to Test
 
