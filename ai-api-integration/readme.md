@@ -3,7 +3,7 @@
 
 <div align="center">
   <h3>Six AI APIs - One Project</h3>
-  <p>OpenAI | Groq | Ollama | Hugging Face | Google Gemini | Cohere</p>
+  <p>OpenAI | Groq | Hugging Face | Google Gemini | Cohere</p>
 </div>
 
 ## 📋 Project Description
@@ -15,7 +15,7 @@ This project demonstrates how to integrate and use six different AI providers th
 -  Python 3.8 or higher installed
 -  pip (Python package installer)
 -  Git (for GitHub)
--  Internet connection (except for Ollama)
+-  Internet connection 
 
 ## 🔧 Setup Instructions
 
