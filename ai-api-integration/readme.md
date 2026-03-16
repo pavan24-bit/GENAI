@@ -174,7 +174,7 @@ Here are all my working programs:
 <img src="screenshots/ollama.png" width="600">
 
 ### Hugging Face
-<img src="screenshots/huggingface.png" width="600">
+<img src="screenshots/Huggingface.png" width="600">
 
 ### Google Gemini
 <img src="screenshots/gemini.png" width="600">
