@@ -1,7 +1,7 @@
 ```markdown
 # 🤖 GenAI API Integration Assignment
-Six AI APIs - One Project</h3>
-OpenAI | Groq | Ollama | Hugging Face | Google Gemini | Cohere</p>
+Five AI APIs - One Project
+Groq | Ollama | Hugging Face | Google Gemini | Cohere
 
 ## 📋 Project Description
 This project demonstrates how to integrate and use six different AI providers through their APIs. Each program allows you to send prompts and receive responses from different AI models. Perfect for learning how to work with various AI services!
@@ -214,11 +214,11 @@ ai-api-integration/
 ├── README.md                   # This file
 │
 └── screenshots/                # Output screenshots
-    ├── groq_output.png
-    ├── ollama_output.png
-    ├── huggingface_output.png
-    ├── gemini_output.png
-    └── cohere_output.png
+    ├── groq.png
+    ├── ollama.png
+    ├── huggingface.png
+    ├── gemini.png
+    └── cohere.png
 ```
 ## 🐛 Common Errors & Solutions
 
